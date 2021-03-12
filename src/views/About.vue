@@ -2,7 +2,7 @@
   <v-container>
     <v-card class="mx-auto mt-5" align="center" color="nord1" outlined>
       <v-row>
-        <v-col cols="2">
+        <v-col cols="2" class="d-none d-lg-flex">
           <v-img
             lazy-src="@/img/cv.jpg"
             max-height="200"
@@ -11,15 +11,16 @@
             class="img rounded-circle"
           ></v-img>
         </v-col>
-        <v-col cols="10" class="text-justify">
+        <v-col :lg="10" class="text-justify">
           <h1 class="text-h2 headline--text">Jon Cauvin</h1>
-          <h1 class="text-h6 color--text">
-            Co-foundator of Family Pix during my degree, a startup project. I'm
-            passionate in IT and high techologies, self-starter and team player.
-          </h1>
           <p class="text-caption color--text">
             Dublin D13, Ireland · +353(83) 313 0767 · jobs@johncvn.ovh
           </p>
+          <p class="text-md-h6 color--text">
+            Co-foundator of Family Pix during my degree, a startup project. I'm
+            passionate in IT and high techologies, self-starter and team player.
+          </p>
+
           <body class="text-xl-body-1 color--text">
             <section class="mt-10">
               <h3 class="headline--text">Welcome to my Universe !</h3>
@@ -31,7 +32,11 @@
                 a job and I wanted to promote myself but with another way, so I
                 decided to built a website.<br />
                 You can check the first version on this website in this
-                repository
+                <a
+                  href="https://github.com/TheBaguette/into-my-universe"
+                  class="link"
+                  >repository <v-icon color="nord4">mdi-github</v-icon></a
+                >.
               </p>
             </section>
 
@@ -119,5 +124,8 @@ export default {
 <style lang="scss">
 .img {
   border: 5px solid var(--v-nord2-base);
+}
+.link {
+  color: var(--v-nord4-base) !important;
 }
 </style>
