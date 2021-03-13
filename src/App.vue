@@ -109,10 +109,13 @@ export default {
 .tab {
   max-height: 5%;
 }
-.color--text {
-  color: var(--v-nord6-base);
-}
 .headline--text {
   color: var(--v-nord4-base);
+}
+.subtitle--text {
+  color: var(--v-nord10-base);
+}
+.color--text {
+  color: var(--v-nord6-base);
 }
 </style>

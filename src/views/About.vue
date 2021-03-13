@@ -127,5 +127,6 @@ export default {
 }
 .link {
   color: var(--v-nord4-base) !important;
+  text-decoration: none;
 }
 </style>
