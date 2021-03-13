@@ -94,8 +94,8 @@ export default {
     drawer: false,
     items: [
       { title: "About", route: "/" },
-      { title: "Education", route: "/education" },
       { title: "Experience", route: "/experience" },
+      { title: "Education", route: "/education" },
       { title: "Skills", route: "/skill" },
       { title: "Interest", route: "/interest" },
     ],

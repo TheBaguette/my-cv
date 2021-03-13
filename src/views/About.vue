@@ -2,7 +2,7 @@
   <v-container>
     <v-card class="mx-auto mt-5" align="center" color="nord1" outlined>
       <v-row>
-        <v-col cols="2" class="d-none d-lg-flex">
+        <v-col cols="2" class="d-none d-lg-block">
           <v-img
             lazy-src="@/img/cv.jpg"
             max-height="200"
@@ -13,8 +13,8 @@
         </v-col>
         <v-col :lg="10" class="text-justify">
           <h1 class="text-h2 headline--text">Jon Cauvin</h1>
-          <p class="text-caption color--text">
-            Dublin D13, Ireland · +353(83) 313 0767 · jobs@johncvn.ovh
+          <p class="text-caption color--text text-left">
+            Dublin D13, Ireland · +353(83) 313 0767 jobs@johncvn.ovh
           </p>
           <p class="text-md-h6 color--text">
             Co-foundator of Family Pix during my degree, a startup project. I'm
@@ -24,7 +24,7 @@
           <body class="text-xl-body-1 color--text">
             <section class="mt-10">
               <h3 class="headline--text">Welcome to my Universe !</h3>
-              <p class="font-weight-regular ">
+              <p class="font-weight-light">
                 My name is Jonathan, I'm 28 years old and I'm passionate about
                 IT. I was born in France (Marseille, South of France) and I
                 decided to study computer science since 2015.<br />
@@ -40,9 +40,9 @@
               </p>
             </section>
 
-            <section class="mt-5">
+            <section class="mt-5 d-none d-lg-block">
               <h3 class="headline--text">And me in all this ?</h3>
-              <p class="font-weight-regular ">
+              <p class="font-weight-light">
                 I'm a simple guy who have a lot of preferences and morals. I'm
                 doing climbing (bouldering) since 2 years ago but not in a row.
                 I have stopped few times because of travelling and not enough
