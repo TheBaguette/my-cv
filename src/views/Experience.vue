@@ -3,7 +3,7 @@
     <h1 class="text-md-h2 headline--text ma-5">Experience</h1>
     <div v-for="item in items" :key="item" class="container">
       <div class="d-md-flex">
-        <h3 class="text-md-h4 subtitle--text">{{ item.position }}</h3>
+        <h3 class="text-md-h4 subtitle--text">· {{ item.position }}</h3>
         <v-spacer></v-spacer>
         <span class="text-right subtitle--text"
           ><b>{{ item.date }}</b></span
