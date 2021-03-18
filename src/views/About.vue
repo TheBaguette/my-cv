@@ -11,7 +11,7 @@
             class="img rounded-circle"
           ></v-img>
         </v-col>
-        <v-col :lg="10" class="text-justify">
+        <v-col :lg="10" class="text-justify column">
           <h1 class="text-h2 headline--text">Jon Cauvin</h1>
           <p class="text-caption color--text text-left">
             Dublin D13, Ireland · +353(83) 313 0767 jobs@johncvn.ovh
@@ -58,45 +58,6 @@
         </v-col>
       </v-row>
     </v-card>
-
-    <v-card class="mx-auto mt-5" align="center" color="nord1" outlined>
-      <v-item-group active-class="primary">
-        <v-container>
-          <v-row justify="center">
-            <v-col v-for="item in items" :key="item" cols="12" md="6">
-              <v-expansion-panels inset>
-                <v-expansion-panel>
-                  <v-expansion-panel-header color="nord2">
-                    {{ item.title }}
-                  </v-expansion-panel-header>
-                  <v-expansion-panel-content color="nord2">
-                    <v-row>
-                      <v-col cols="5">
-                        <v-img
-                          aspect-ratio="2"
-                          max-height="100%"
-                          max-width="100%"
-                          :src="item.src"
-                          class="text-center project--img"
-                        >
-                        </v-img>
-                      </v-col>
-                      <v-col cols="7">
-                        {{ item.description }}
-                        <v-spacer></v-spacer>
-                        <v-btn depressed color="nord3 mt-3">
-                          See more
-                        </v-btn>
-                      </v-col>
-                    </v-row>
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-item-group>
-    </v-card>
   </v-container>
 </template>
 
@@ -122,6 +83,12 @@ export default {
 </script>
 
 <style lang="scss">
+$breakpoint-phone: 600px;
+@media (max-width: $breakpoint-phone) {
+  .column {
+    margin: 2%;
+  }
+}
 .img {
   border: 5px solid var(--v-nord2-base);
 }

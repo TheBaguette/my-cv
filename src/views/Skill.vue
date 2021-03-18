@@ -5,7 +5,7 @@
       Programming Languages, Tools, Operating Systems & CMS
     </h3>
     <div class="container">
-      <ul align="center" justify="space-around">
+      <ul justify="space-around">
         <li class="d-inline" v-for="icon in icon" :key="icon">
           <v-icon size="350%" class="skill-icon">{{ icon.logo }}</v-icon>
         </li>
@@ -14,7 +14,7 @@
     <h3 class="text-md-h5 headline--text ma-5">
       Workflow
     </h3>
-    <ul align="center" justify="space-around">
+    <ul justify="space-around">
       <li class="d-block" v-for="workflow in workflow" :key="workflow">
         <v-icon color="nord4">{{ workflow.icon }} </v-icon> {{ workflow.title }}
       </li>
@@ -49,7 +49,7 @@ export default {
       },
       {
         title: "github",
-        logo: "mdi-github-face",
+        logo: "mdi-github",
       },
       {
         title: "slack",
@@ -66,10 +66,6 @@ export default {
       {
         title: "linux",
         logo: "mdi-linux",
-      },
-      {
-        title: "wordpress",
-        logo: "mdi-wordpress",
       },
     ],
     workflow: [
@@ -95,6 +91,7 @@ $breakpoint-phone: 600px;
 @media (max-width: $breakpoint-phone) {
   .container {
     width: 100% !important;
+    padding-left: 0%;
   }
 }
 .container {

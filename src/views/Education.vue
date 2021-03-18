@@ -1,9 +1,9 @@
 <template>
   <div class="about text-left">
     <h1 class="text-md-h2 headline--text ma-5">Education</h1>
-    <div v-for="item in items" :key="item" class="container">
+    <div v-for="item in items" :key="item" class="container ma-2">
       <div class="d-md-flex">
-        <h3 class="text-md-h4 subtitle--text">· {{ item.position }}</h3>
+        <h3 class="text-md-h4 subtitle--text">{{ item.position }}</h3>
         <v-spacer></v-spacer>
         <span class="text-right subtitle--text"
           ><b>{{ item.date }}</b></span

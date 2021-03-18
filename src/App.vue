@@ -6,7 +6,7 @@
         class="d-flex d-sm-none"
       ></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="headline--text d-flex d-sm-flex"
+      <v-toolbar-title class="headline--text d-flex d-md-flex"
         >Hello there</v-toolbar-title
       >
 
@@ -27,14 +27,19 @@
 
     <v-navigation-drawer v-model="drawer" absolute temporary color="nord1">
       <v-list nav dense>
-        <v-list-item-group v-model="group" active-class="nord2">
+        <v-list-item-group v-model="item" active-class="nord2">
           <v-list-item
             v-for="item in items"
             :key="item"
             :to="item.route"
             class="color--text"
           >
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-icon>
+              <v-icon v-text="item.icon" color="nord4"></v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title v-text="item.title"></v-list-item-title>
+            </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -93,11 +98,11 @@ export default {
   data: () => ({
     drawer: false,
     items: [
-      { title: "About", route: "/" },
-      { title: "Experience", route: "/experience" },
-      { title: "Education", route: "/education" },
-      { title: "Skills", route: "/skill" },
-      { title: "Interest", route: "/interest" },
+      { title: "About", icon: "mdi-account", route: "/" },
+      { title: "Experience", icon: "mdi-briefcase", route: "/experience" },
+      { title: "Education", icon: "mdi-school", route: "/education" },
+      { title: "Skills", icon: "mdi-code-tags", route: "/skill" },
+      { title: "Interest", icon: "mdi-head-heart", route: "/interest" },
     ],
     icon: "mdi-theme-light-dark",
     iconWhite: "mdi-white-balance-sunny",
