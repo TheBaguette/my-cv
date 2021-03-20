@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # my-cv
 =======
 # my-cv
@@ -25,4 +24,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
->>>>>>> c29fa15ae9a332a04ae4c4b8756afed2f03ddffc
